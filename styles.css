@@ -1,0 +1,21 @@
+h1 {
+    font-size:large;
+    font-family:fantasy;
+}
+h2 {
+    font-size:larger;
+    font-family:fantasy;
+}
+h3 {
+    font-size:medium;
+    font-family:fantasy;
+}
+
+p {
+    font-size:small;
+    font-family:fantasy;
+}
+
+table {
+    border: 0px;
+}
