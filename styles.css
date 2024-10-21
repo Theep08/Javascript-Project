@@ -19,3 +19,15 @@ p {
 table {
     border: 0px;
 }
+
+.pushRow {
+    padding-left: 150px;
+}
+
+ul {
+    padding-left: 13px;
+}
+
+.BottomInformation {
+    vertical-align:bottom;
+}
