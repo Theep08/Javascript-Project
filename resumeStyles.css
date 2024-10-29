@@ -1,0 +1,39 @@
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+h1 {
+    font-size:48px;
+    font-family:'Lucida Sans';
+}
+h2 {
+    font-size:18px;
+    line-height: 18px;
+    font-weight: bold;
+    color:lightgreen;
+    font-family:'Lucida Sans';
+}
+h3 {
+    font-size:medium;
+    font-family:'Lucida Sans';
+}
+
+p {
+    font-size:18px;
+    font-family:'Lucida Sans';
+    line-height: 18px;
+}
+
+tr {
+    vertical-align: top;
+}

@@ -31,3 +31,7 @@ ul {
 .BottomInformation {
     vertical-align:bottom;
 }
+
+.bold {
+    font-weight: bold;
+}
