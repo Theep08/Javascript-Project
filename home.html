@@ -2,23 +2,36 @@
 <body>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="hamburgerStyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="hamburger.js"></script>
         <script src="jquery-3.7.1.min.js"></script>
     </head>
     <head>
-        <table>
-            <tr>
-                <td>
-                    <img>
-                </td>
-                <td>
-                    <h1>TheEep</h1>
-                </td>
-                <td>
-                    <img>
-                </td>
-            </tr>
-        </table>
-        <hr>
+        <div class="container">
+            <div class="topnav">
+                <table>
+                    <tr>
+                        <td>
+                            <img>
+                        </td>
+                        <td>
+                            <a href="#home" class="active"><h1>TheEep</h1></a>
+                        </td>
+                        <td>
+                            <img>
+                        </td>
+                    </tr>
+                </table>
+                <div id="myLinks">
+                <a href="file:///C:/Users/811977/Downloads/Theo-Hipple/Javascript-Project/resume.html">Resume</a>
+                <a href="#contact">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="popUp()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
     </head>
 
     <h2>About Me.</h2>

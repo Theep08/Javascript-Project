@@ -1,19 +1,19 @@
 h1 {
     font-size:large;
-    font-family:fantasy;
+    font-family:'Lucida Sans';
 }
 h2 {
     font-size:larger;
-    font-family:fantasy;
+    font-family:'Lucida Sans';
 }
 h3 {
     font-size:medium;
-    font-family:fantasy;
+    font-family:'Lucida Sans';
 }
 
 p {
     font-size:small;
-    font-family:fantasy;
+    font-family:'Lucida Sans';
 }
 
 table {
@@ -29,7 +29,8 @@ ul {
 }
 
 .BottomInformation {
-    vertical-align:bottom;
+    position:absolute;
+    bottom:0px;
 }
 
 .bold {

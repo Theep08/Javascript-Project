@@ -12,11 +12,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-h1 {
-    font-size:48px;
-    font-family:'Lucida Sans';
-}
-h2 {
+.resumeHeading {
     font-size:18px;
     line-height: 18px;
     font-weight: bold;
