@@ -3,31 +3,47 @@
     <head>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="resumeStyles.css">
+        <link rel="stylesheet" href="hamburgerStyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="hamburger.js"></script>
+        <script src="jquery-3.7.1.min.js"></script>
     </head>
     <head>
-        <table>
-            <tr>
-                <td>
-                    <img>
-                </td>
-                <td>
-                    <h1>TheEep</h1>
-                </td>
-                <td>
-                    <img>
-                </td>
-            </tr>
-        </table>
-        <hr>
+        <div class="container">
+            <div class="topnav">
+                <table>
+                    <tr>
+                        <td>
+                            <img>
+                        </td>
+                        <td>
+                            <a href="file:///C:/Users/811977/Downloads/Theo-Hipple/Javascript-Project/home.html" class="active"><h1>TheEep</h1></a>
+                        </td>
+                        <td>
+                            <img>
+                        </td>
+                    </tr>
+                </table>
+                <div id="myLinks">
+                    <hr style="color:white;">
+                    <a href="file:///C:/Users/811977/Downloads/Theo-Hipple/Javascript-Project/home.html">About Me</a>
+                    <a href="file:///C:/Users/811977/Downloads/Theo-Hipple/Javascript-Project/resume.html">Resume</a>
+                    <a href="file:///C:/Users/811977/Downloads/Theo-Hipple/Javascript-Project/projects.html">Projects</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="popUp()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
     </head>
 
     <h2>Resume.</h2>
 
     <head>
-        <div class="container">
+        <div class="resumeContainer">
             <img src="resumeHeader.jpg" alt="mossy carpeted forest floor" style="width:100%;">
             <div class="centered"><table>
-                <tr><h1>Theodore Hipple</h1></tr>
+                <tr><h1 class="resumeTitle">Theodore Hipple</h1></tr>
                 <tr><p>241 La Mesa Drive</p></tr>
                 <tr><p>Portola Valley, 94028</p></tr>
                 <tr><p>(650) 785-2904  |  theohipple@gmail.com</p></tr>

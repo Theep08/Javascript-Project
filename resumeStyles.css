@@ -1,5 +1,5 @@
 /* Container holding the image and the text */
-.container {
+.resumeContainer {
     position: relative;
     text-align: center;
     color: white;
@@ -12,11 +12,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-.resumeHeading {
+  .resumeHeading {
     font-size:18px;
     line-height: 18px;
     font-weight: bold;
     color:lightgreen;
+    font-family:'Lucida Sans';
+}.resumeTitle {
+    font-size:56px;
+    font-weight: bold;
+    color:white;
     font-family:'Lucida Sans';
 }
 h3 {

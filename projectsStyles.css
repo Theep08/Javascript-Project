@@ -1,0 +1,29 @@
+.bigImage {
+    width:100%;
+}
+.smallImage {
+    width:100%;
+}
+table td, table td * {
+    vertical-align: top;
+}
+.imageContainer {
+    position: relative;
+    width:90%;
+    height:90%;
+}
+.imageButton {
+    position: absolute;
+    width:130px;
+    height:32px;
+    top: 100%;
+    left: 100%;
+    transform: translate(-108%, -130%);
+    z-index: 2; 
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  
+}
