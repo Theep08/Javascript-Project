@@ -4,11 +4,13 @@ h1 {
 }
 h2 {
     font-size:larger;
+    font-weight: bold;
     font-family:'Lucida Sans';
 }
 h3 {
-    font-size:medium;
+    font-size:larger;
     font-family:'Lucida Sans';
+    color:rgb(88, 81, 71);
 }
 
 p {
@@ -33,10 +35,29 @@ ul {
 }
 
 .BottomInformation {
-    position:absolute;
-    vertical-align: bottom;
+    text-align: center;
+    margin:auto;
+    background-color: antiquewhite;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    position: absolute;
+    transform: translateY(100%);
 }
 
 .bold {
     font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+div {
+    width: 100%;
+  }
+
+.pageElements {
+    width: 90%;
+    margin:auto;
 }

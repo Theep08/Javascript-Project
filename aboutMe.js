@@ -1,16 +1,16 @@
 
 $("li").on("mouseenter", function(){
-    $(this).css("color", "blue")
+    $(this).css("color", "orange")
 })
 
 $("li").on("mouseleave", function(){
     $(this).css("color", "black")
 })
 
-$("h3").on("mouseenter", function(){
-    $(this).css("color", "blue")
+$("td h3").on("mouseenter", function(){
+    $(this).css("color", "orange")
 })
 
-$("h3").on("mouseleave", function(){
+$("td h3").on("mouseleave", function(){
     $(this).css("color", "black")
 })
