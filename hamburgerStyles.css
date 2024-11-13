@@ -40,3 +40,10 @@
     height: 20%;
     position: relative;
   }
+
+  body {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+  }

@@ -4,8 +4,11 @@
 .smallImage {
     width:100%;
 }
-table td, table td * {
+table td, table td {
     vertical-align: top;
+}
+.projectContainer p {
+    width:90%;
 }
 .imageContainer {
     position: relative;
