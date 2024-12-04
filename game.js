@@ -1,9 +1,31 @@
 var money;
 var bet;
+var car;
 
 $("#number1").parent().css("background-color", "bisque")
 $("#number2").parent().css("background-color", "bisque")
 $("#number3").parent().css("background-color", "bisque")
+
+$("#betRed").on("click", function(){
+    car = 1;
+    $("#betCar").text(car)
+    saveData();
+})
+$("#betWhite").on("click", function(){
+    car = 2;
+    $("#betCar").text(car)
+    saveData();
+})
+$("#betBlue").on("click", function(){
+    car = 3;
+    $("#betCar").text(car)
+    saveData();
+})
+$("#betGray").on("click", function(){
+    car = 4;
+    $("#betCar").text(car)
+    saveData();
+})
 
 document.getElementById("runRace").addEventListener("click", function(){
     runRace()
@@ -14,7 +36,12 @@ document.getElementById("runRace10").addEventListener("click", function(){
     bet = 0;
 
     if (money >= 10){
-        spin(10)
+        money = money - 10;
+        bet += 10;
+        $("#money").text("$" + money)
+        $("#betAmount").text("$" + bet)
+        saveData()
+        runRace()
     }
 })
 
@@ -60,6 +87,7 @@ document.getElementById("runRace10").addEventListener("click", function(){
     saveData()
     $("#money").text("$" + money)
     $("#betAmount").text("$" + bet)
+    $("#betCar").text(car)
   })
 
   $('#lane1').prepend('<img id="car1" src="car1.png" />')
@@ -71,7 +99,7 @@ function isEven(number) {
     return number % 2 === 0; 
   }
 
-
+// Removed
 function spin(initialBet) {
     if (initialBet) {
         bet += initialBet;
@@ -136,6 +164,7 @@ function spin(initialBet) {
 function saveData () {
     localStorage.setItem("betAmount", bet);
     localStorage.setItem("money", money);
+    localStorage.setItem("car", car);
 }
 
 
@@ -174,12 +203,8 @@ $(window).on('load', function() {
     return index + 1
   }
 
-  var carChoice = {
-    text: "1"
-  };
-
   function runRace() {
-    if (carChoice.text != null) { // Add car choice variable
+    if (($("#betCar").text() == 1) | ($("#betCar").text() == 2) | ($("#betCar").text() == 3) | ($("#betCar").text() == 4)) { // Add car choice variable
         
 
         $("#car1").css({
@@ -212,7 +237,6 @@ $(window).on('load', function() {
         car3.speed = Math.round(Math.random() * 4) + 4
         car4.speed = Math.round(Math.random() * 4) + 4
         const winningCarNumber = pickWinner([car1, car2, car3, car4])
-        console.log(car1.speed, car2.speed, car3.speed, car4.speed)
 
         $("#car1").animate({
             left: '1000px'
@@ -230,10 +254,21 @@ $(window).on('load', function() {
             left: '1000px'
         }, 6000/car4.speed)
 
-        if (carChoice.text = winningCarNumber) {
-            //do something
+        if (car == winningCarNumber) {
+            $("#delcareWiningCar").text("The winning car is... " + winningCarNumber + "! You won $" + (bet * 10) + "!")
+            money += bet * 10;
+            bet = 0;
+            $("#money").text("$" + money)
+            $("#betAmount").text("$" + bet)
+            saveData()
+        } else {
+            $("#delcareWiningCar").text("The winning car is... " + winningCarNumber + ". You lost.")
+            bet = 0;
+            $("#money").text("$" + money)
+            $("#betAmount").text("$" + bet)
+            saveData()
         }
+    } else {
+        console.log("Worky")
     }
   }
-
-  runRace()
